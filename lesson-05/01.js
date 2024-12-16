@@ -25,5 +25,4 @@ const game = {
     }
   }
 }
-addResource('gold', 20)
-console.log(game);
+

@@ -4,12 +4,14 @@
  */
 
 function isNumeric(str) {
-  return !isNaN(str)
+  return !isNaN(str) && str.trim() !== ""
   // your code
 }
 
-//console.log(isNumeric("123")) // Ожидаемый результат: true
+// console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
+
+

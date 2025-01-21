@@ -8,6 +8,10 @@
 
 function capitalizeWords(str) {
   let resultStr = ""
-
-  
+  const arr = str.split(" ")
+  for(let i = 0; i < arr.length; i++){
+    const newWord = arr[i][0].toUpperCase() + arr[i].slice(1)
+    resultStr = resultStr + " " + newWord
+  }
+  return resultStr.trim()
 }

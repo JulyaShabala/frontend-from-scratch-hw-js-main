@@ -28,7 +28,7 @@ const filter = (array, callback) => {
   for(let i = 0; i < array.length; i++){
     const result = callback(array[i], i)
     if(result === true){
-      newarr.push(result)
+      newarr.push(array[i])
     }
   }
   return newarr
@@ -41,4 +41,3 @@ const oddNumbers = filter(numbers, (element, index) => {
 });
 
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
-*/
